@@ -49,7 +49,7 @@ std::string Contact::format(std::string str)
 
 void Contact::display_infos(int index)
 {
-	std::cout << "| " << format(std::to_string(index)) << " | " << format(data[0]) << " | " << format(data[1]) << " | "
+	std::cout << "| " << "         " << index << " | " << format(data[0]) << " | " << format(data[1]) << " | "
 			  << format(data[2]) << " |" << std::endl;
 }
 
