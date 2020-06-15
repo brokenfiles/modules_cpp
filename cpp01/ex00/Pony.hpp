@@ -6,20 +6,18 @@
 class Pony
 {
 public:
-	float size, weight, endurance, speed;
-	std::string name, color;
+	Pony(std::string name, std::string color, float speed);
 
-	void ponyOnTheStack(void);
+	~Pony();
 
-	void ponyOnTheHeap(void);
-
-	void jump(void);
-
-	void sleep(float time);
+	void run(void);
 
 	void eat(std::string food);
 
-	void changeSpeed(float newSpeed);
+	void setSpeed(float newSpeed);
+private:
+	std::string name, color;
+	float speed;
 };
 
 #endif

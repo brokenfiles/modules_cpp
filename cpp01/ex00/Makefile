@@ -1,10 +1,11 @@
-NAME		= megaphone
+NAME		= pony
 CC			= clang++
 RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror
 
-SRCSCPP		=	megaphone.cpp
+SRCSCPP		=	main.cpp \
+				Pony.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

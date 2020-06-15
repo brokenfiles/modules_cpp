@@ -4,7 +4,9 @@ RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror
 
-SRCSCPP		=	ex04.cpp
+SRCSCPP		=	Brain.cpp \
+				Human.cpp \
+				main.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

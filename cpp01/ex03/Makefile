@@ -6,7 +6,7 @@ CFLAGS		= -Wall -Wextra -Werror
 
 SRCSCPP		=	main.cpp \
 				Zombie.cpp \
-				ZombieEvent.cpp
+				ZombieHorde.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

@@ -1,12 +1,13 @@
-NAME		= brain
+NAME		= humans
 CC			= clang++
 RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror
 
-SRCSCPP		=	Brain.cpp \
-				Human.cpp \
-				main.cpp
+SRCSCPP		=	main.cpp \
+				HumanA.cpp \
+				HumanB.cpp \
+				Weapon.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

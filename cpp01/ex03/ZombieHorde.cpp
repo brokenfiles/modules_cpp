@@ -1,11 +1,6 @@
-#include "ZombieEvent.hpp"
+#include "ZombieHorde.hpp"
 
-Zombie *ZombieEvent::newZombie(std::string name)
-{
-	return (new Zombie(name, ZombieEvent::type));
-}
-
-std::string ZombieEvent::randomName(size_t len)
+std::string ZombieHorde::randomName(size_t len)
 {
 	std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 	std::random_device rd;
@@ -15,15 +10,28 @@ std::string ZombieEvent::randomName(size_t len)
 	return (alphabet.substr(0, len));
 }
 
-Zombie *ZombieEvent::randomChump()
+ZombieHorde::ZombieHorde(size_t n, std::string type)
 {
-	Zombie *zombie = new Zombie(ZombieEvent::randomName(10), type);
+	zombies_number = n;
 
-	zombie->advert();
-	return (zombie);
+	horde = new Zombie[n];
+	for (size_t i = 0; i < n; ++i)
+	{
+		horde[i].setType(type);
+		horde[i].setName(ZombieHorde::randomName(10));
+	}
 }
 
-void ZombieEvent::setZombieType(std::string type)
+void ZombieHorde::announce()
 {
-	ZombieEvent::type = type;
+	for (size_t i = 0; i < zombies_number; ++i)
+	{
+		horde[i].advert();
+	}
+}
+
+ZombieHorde::~ZombieHorde()
+{
+	delete[] horde;
+	std::cout << "The horde has been eliminated." << std::endl;
 }

@@ -1,12 +1,10 @@
-NAME		= zombie
+NAME		= brain
 CC			= clang++
 RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror
 
-SRCSCPP		=	main.cpp \
-				Zombie.cpp \
-				ZombieHorde.cpp
+SRCSCPP		=	ex04.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

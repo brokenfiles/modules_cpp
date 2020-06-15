@@ -1,11 +1,12 @@
-NAME		= pony
+NAME		= zombie
 CC			= clang++
 RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror
 
 SRCSCPP		=	main.cpp \
-				Pony.cpp
+				Zombie.cpp \
+				ZombieEvent.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 
