@@ -10,71 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8112013-c81f-47a8-803c-63739133065e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/louis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex00/Fixed.class.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex00/Fixed.class.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex00/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex01/Fixed.class.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex01/Fixed.class.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex01/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex02/Fixed.class.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex02/Fixed.class.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex02/fixed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp02/ex02/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex00/FragTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex00/FragTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex00/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex00/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/FragTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/FragTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/ScavTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/ScavTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex01/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/ClapTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/ClapTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/FragTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/FragTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/ScavTrap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/ScavTrap.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpp03/ex02/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex00/Pony.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex00/Pony.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex00/Pony.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex00/Pony.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex00/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex01/ex01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex01/ex01.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/Zombie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/Zombie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/Zombie.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/Zombie.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/ZombieEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/ZombieEvent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/ZombieEvent.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/ZombieEvent.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex02/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex02/zombie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/Zombie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/Zombie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/Zombie.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/Zombie.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/ZombieHorde.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/ZombieHorde.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/ZombieHorde.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/ZombieHorde.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex03/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex03/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex04/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex04/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex04/ex04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex04/ex04.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/Brain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/Brain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/Brain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/Brain.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/Human.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/Human.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/Human.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/Human.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex05/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex05/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/HumanA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/HumanA.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/HumanA.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/HumanA.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/HumanB.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/HumanB.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/HumanB.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/HumanB.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/Weapon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/Weapon.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp01/ex06/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp01/ex06/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591802248002</updated>
       <workItem from="1591802249179" duration="27635000" />
-      <workItem from="1591963829629" duration="17938000" />
+      <workItem from="1591963829629" duration="18409000" />
     </task>
     <servers />
   </component>
