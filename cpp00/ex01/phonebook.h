@@ -16,6 +16,7 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
+# include <limits.h>
 # include "Contact.hpp"
 
 void	command_add(Contact contacts[8], int *contact_number);
