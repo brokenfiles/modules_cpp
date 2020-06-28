@@ -1,24 +1,15 @@
-#ifndef FRAG_TRAP__HPP
-# define FRAG_TRAP__HPP
+//
+// Created by Louis Laurent on 22/06/2020.
+//
 
-# include <iostream>
-# include <random>
-# include "ClapTrap.hpp"
+#ifndef MODULES_CPP_FRAGTRAP_HPP
+#define MODULES_CPP_FRAGTRAP_HPP
 
-# define TITLE "FR4G-TP "
 
-class FragTrap : public ClapTrap
+class FragTrap
 {
-public:
-	FragTrap(std::string name);
 
-	FragTrap(const FragTrap &fragTrap);
-
-	~FragTrap();
-
-	FragTrap &operator=(const FragTrap &fragTrap);
-
-	void vaulthunter_dot_exe(std::string const &target);
 };
 
-#endif
+
+#endif //MODULES_CPP_FRAGTRAP_HPP

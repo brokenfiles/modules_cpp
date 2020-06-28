@@ -1,21 +1,15 @@
-#ifndef SCAV_TRAP__HPP
-# define SCAV_TRAP__HPP
+//
+// Created by Louis Laurent on 23/06/2020.
+//
 
-# include "FragTrap.hpp"
-# include "ClapTrap.hpp"
+#ifndef MODULES_CPP_SCAVTRAP_HPP
+#define MODULES_CPP_SCAVTRAP_HPP
+
 
 class ScavTrap
 {
-public:
-	ScavTrap(std::string name);
 
-	ScavTrap(const ScavTrap &scavTrap);
-
-	~ScavTrap();
-
-	ScavTrap &operator=(const ScavTrap &scavTrap);
-
-	void challengeNewcomer(const std::string &target);
 };
 
-#endif
+
+#endif //MODULES_CPP_SCAVTRAP_HPP
