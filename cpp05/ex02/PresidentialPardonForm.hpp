@@ -1,0 +1,15 @@
+//
+// Created by Louis Laurent on 28/06/2020.
+//
+
+#ifndef MODULE_CPP_PRESIDENTIALPARDONFORM_HPP
+#define MODULE_CPP_PRESIDENTIALPARDONFORM_HPP
+
+
+class PresidentialPardonForm
+{
+
+};
+
+
+#endif //MODULE_CPP_PRESIDENTIALPARDONFORM_HPP

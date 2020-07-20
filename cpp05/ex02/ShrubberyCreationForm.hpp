@@ -1,0 +1,15 @@
+//
+// Created by Louis Laurent on 28/06/2020.
+//
+
+#ifndef MODULE_CPP_SHRUBBERYCREATIONFORM_HPP
+#define MODULE_CPP_SHRUBBERYCREATIONFORM_HPP
+
+
+class ShrubberyCreationForm
+{
+
+};
+
+
+#endif //MODULE_CPP_SHRUBBERYCREATIONFORM_HPP
