@@ -6,9 +6,20 @@
 #define MODULE_CPP_SHRUBBERYCREATIONFORM_HPP
 
 
-class ShrubberyCreationForm
-{
+#include "Form.hpp"
 
+class ShrubberyCreationForm : public Form
+{
+public:
+	ShrubberyCreationForm(std::string target);
+
+	ShrubberyCreationForm(const ShrubberyCreationForm &shrubberyCreationForm);
+
+	ShrubberyCreationForm &operator=(const ShrubberyCreationForm &shrubberyCreationForm);
+
+	virtual ~ShrubberyCreationForm();
+
+	void execute(Bureaucrat const &executor);
 };
 
 

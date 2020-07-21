@@ -6,9 +6,20 @@
 #define MODULE_CPP_ROBOTOMYREQUESTFORM_HPP
 
 
-class RobotomyRequestForm
-{
+#include "Form.hpp"
 
+class RobotomyRequestForm : public Form
+{
+public:
+	RobotomyRequestForm(std::string target);
+
+	RobotomyRequestForm(const RobotomyRequestForm &robotomyRequestForm);
+
+	RobotomyRequestForm &operator=(const RobotomyRequestForm &robotomyRequestForm);
+
+	virtual ~RobotomyRequestForm();
+
+	void execute(Bureaucrat const &executor);
 };
 
 

@@ -1,4 +1,7 @@
 #include "FragTrap.hpp"
+#include "../ex02/ClapTrap.hpp"
+#include "../ex02/FragTrap.hpp"
+
 
 FragTrap::FragTrap(std::string name) : name(name), hit_points(100), max_hit_points(100), energy_points(100),
 									   max_energy_points(100),

@@ -6,11 +6,12 @@
 #define MODULE_CPP_A_HPP
 
 
+#include "Base.hpp"
 
-class A {
+class A : public Base
+{
 
 };
-
 
 
 #endif //MODULE_CPP_A_HPP

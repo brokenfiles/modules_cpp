@@ -61,6 +61,14 @@ public:
 	int getArmorDamageReduction() const;
 
 	void setArmorDamageReduction(int armorDamageReduction);
+
+	void rangedAttack(const std::string &target);
+
+	void meleeAttack(const std::string &target);
+
+	void takeDamage(unsigned int amount);
+
+	void beRepaired(unsigned int amount);
 };
 
 

@@ -5,10 +5,16 @@
 #ifndef MODULE_CPP_SUPERMUTANT_HPP
 #define MODULE_CPP_SUPERMUTANT_HPP
 
+#include "Enemy.hpp"
 
-class SuperMutant
+class SuperMutant : public Enemy
 {
+public:
+	virtual ~SuperMutant();
 
+	SuperMutant();
+
+	virtual void takeDamage(int damage);
 };
 
 

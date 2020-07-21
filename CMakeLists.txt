@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 
-file(GLOB helloworld_SRC
-        "cpp03/ex03/*.h"
-        "cpp03/ex03/*.cpp"
+project(module_cpp)
+
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++98 -Wall -Wextra -Werror")
+
+file(GLOB module_cpp
+        "cpp08/ex01/*.hpp"
+        "cpp08/ex01/*.cpp"
         )
 
-add_executable(helloworld ${helloworld_SRC})
+add_executable(module ${module_cpp})

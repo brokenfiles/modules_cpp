@@ -6,9 +6,16 @@
 #define MODULES_CPP_SCAVTRAP_HPP
 
 
-class ScavTrap
-{
+#include "ClapTrap.hpp"
 
+class ScavTrap : public ClapTrap
+{
+public:
+	~ScavTrap();
+
+	ScavTrap(const std::string &name);
+
+	void challengeNewcomer(const std::string &target);
 };
 
 

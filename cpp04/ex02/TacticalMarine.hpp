@@ -6,9 +6,26 @@
 #define MODULE_CPP_TACTICALMARINE_HPP
 
 
-class TacticalMarine
-{
+#include "ISpaceMarine.hpp"
 
+class TacticalMarine : public ISpaceMarine
+{
+public:
+	TacticalMarine();
+
+	TacticalMarine(const TacticalMarine &marine);
+
+	TacticalMarine &operator=(const TacticalMarine &marine);
+
+	~TacticalMarine();
+
+	ISpaceMarine *clone() const;
+
+	void battleCry() const;
+
+	void rangedAttack() const;
+
+	void meleeAttack() const;
 };
 
 

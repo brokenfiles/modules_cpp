@@ -6,9 +6,14 @@
 #define MODULE_CPP_RADSCORPION_HPP
 
 
-class RadScorpion
-{
+#include "Enemy.hpp"
 
+class RadScorpion : public Enemy
+{
+public:
+	RadScorpion();
+
+	virtual ~RadScorpion();
 };
 
 

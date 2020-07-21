@@ -3,16 +3,18 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int main() {
-	Bureaucrat john("Mathis Degryck", 2);
-	ShrubberyCreationForm form("Population");
-	john.signForm(form);
-	john.executeForm(form);
-	RobotomyRequestForm form1("Society");
-	john.signForm(form1);
-	john.executeForm(form1);
-	PresidentialPardonForm form2("Bosses");
-	john.signForm(form2);
-	john.executeForm(form2);
+	Intern someRandomIntern;
+	Form *rrf;
+	try {
+		rrf = someRandomIntern.makeForm("presidential pardon", "Bender");
+		Bureaucrat randomBureaucrat("Random Bureaucrat", 2);
+		randomBureaucrat.signForm(*rrf);
+		randomBureaucrat.executeForm(*rrf);
+		delete rrf;
+	} catch (std::exception & e) {
+		std::cerr << e.what() << std::endl;
+	}
 }

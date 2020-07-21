@@ -1,5 +1,6 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
+#include "NinjaTrap.hpp"
 
 
 int main(void) {
@@ -9,4 +10,8 @@ int main(void) {
 	fragTrap1.vaulthunter_dot_exe("Jacques");
 	ScavTrap scavTrap("John");
 	scavTrap.challengeNewcomer(fragTrap.getName());
+	NinjaTrap ninjaTrap("Jacky");
+	ninjaTrap.ninjaShoebox(scavTrap);
+	NinjaTrap ninjaTrap1(ninjaTrap);
+	std::cout << "My name is " << ninjaTrap1.getName() << std::endl;
 }

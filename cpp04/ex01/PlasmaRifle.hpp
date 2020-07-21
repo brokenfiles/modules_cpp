@@ -6,9 +6,16 @@
 #define MODULES_CPP_PLASMARIFLE_HPP
 
 
-class PlasmaRifle
-{
+#include "AWeapon.hpp"
 
+class PlasmaRifle : public AWeapon
+{
+public:
+	virtual void attack() const;
+
+	virtual ~PlasmaRifle();
+
+	PlasmaRifle();
 };
 
 

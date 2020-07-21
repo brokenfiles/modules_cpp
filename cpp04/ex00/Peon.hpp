@@ -6,9 +6,16 @@
 #define MODULES_CPP_PEON_HPP
 
 
-class Peon
-{
+#include "Victim.hpp"
 
+class Peon : public Victim
+{
+public:
+	virtual ~Peon();
+
+	Peon(const std::string &name);
+
+	void getPolymorphed() const;
 };
 
 

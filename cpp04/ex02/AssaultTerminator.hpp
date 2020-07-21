@@ -6,9 +6,26 @@
 #define MODULE_CPP_ASSAULTTERMINATOR_HPP
 
 
-class AssaultTerminator
-{
+#include "ISpaceMarine.hpp"
 
+class AssaultTerminator : public ISpaceMarine
+{
+public:
+	AssaultTerminator();
+
+	AssaultTerminator(const AssaultTerminator &assaultTerminator);
+
+	AssaultTerminator &operator=(const AssaultTerminator &other);
+
+	~AssaultTerminator();
+
+	ISpaceMarine *clone() const;
+
+	void battleCry() const;
+
+	void rangedAttack() const;
+
+	void meleeAttack() const;
 };
 
 

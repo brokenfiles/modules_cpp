@@ -5,10 +5,19 @@
 #ifndef MODULES_CPP_SUPERTRAP_HPP
 #define MODULES_CPP_SUPERTRAP_HPP
 
+#include "ClapTrap.hpp"
+#include "NinjaTrap.hpp"
 
-class SuperTrap
+class SuperTrap : public FragTrap, public NinjaTrap
 {
+public:
+	SuperTrap(const std::string &name);
 
+	~SuperTrap();
+
+	void rangedAttack(const std::string &target);
+
+	void meleeAttack(const std::string &target);
 };
 
 

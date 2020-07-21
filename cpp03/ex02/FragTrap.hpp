@@ -5,10 +5,17 @@
 #ifndef MODULES_CPP_FRAGTRAP_HPP
 #define MODULES_CPP_FRAGTRAP_HPP
 
+#include "ClapTrap.hpp"
 
-class FragTrap
+class FragTrap : public ClapTrap
 {
+public:
 
+	FragTrap(const std::string &name);
+
+	~FragTrap();
+
+	void vaulthunter_dot_exe(const std::string &target);
 };
 
 

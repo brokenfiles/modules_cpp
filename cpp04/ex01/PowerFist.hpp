@@ -6,9 +6,16 @@
 #define MODULES_CPP_POWERFIST_HPP
 
 
-class PowerFist
-{
+#include "AWeapon.hpp"
 
+class PowerFist : public AWeapon
+{
+public:
+	PowerFist();
+
+	virtual ~PowerFist();
+
+	virtual void attack() const;
 };
 
 

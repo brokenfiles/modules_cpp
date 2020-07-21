@@ -2,7 +2,7 @@ NAME		= replace
 CC			= clang++
 RM			= rm -f
 OBJS_DIR	= ./objects
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
 SRCSCPP		=	main.cpp \
 				FileHandler.cpp

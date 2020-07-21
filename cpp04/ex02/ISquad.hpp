@@ -2,14 +2,20 @@
 // Created by Louis Laurent on 26/06/2020.
 //
 
-#ifndef MODULE_CPP_SQUAD_HPP
-#define MODULE_CPP_SQUAD_HPP
+#ifndef MODULE_CPP_ISQUAD_HPP
+#define MODULE_CPP_ISQUAD_HPP
 
 
-class Squad
+#include "ISpaceMarine.hpp"
+
+class ISquad
 {
-
+public:
+	virtual ~ISquad() {};
+	virtual int getCount() const = 0;
+	virtual ISpaceMarine* getUnit(int) const = 0;
+	virtual int push(ISpaceMarine*) = 0;
 };
 
 
-#endif //MODULE_CPP_SQUAD_HPP
+#endif //MODULE_CPP_ISQUAD_HPP

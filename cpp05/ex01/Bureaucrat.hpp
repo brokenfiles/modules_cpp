@@ -5,27 +5,31 @@
 #ifndef MODULE_CPP_BUREAUCRAT_HPP
 #define MODULE_CPP_BUREAUCRAT_HPP
 
-
 #include <string>
 #include <ostream>
+#include "Form.hpp"
 
-class BureauCrat
+class Form;
+
+class Bureaucrat
 {
 private:
 	std::string name;
 	int grade;
 public:
-	BureauCrat(std::string name, int grade);
+	Bureaucrat(const std::string& name, int grade);
 
-	BureauCrat(const BureauCrat &bureauCrat);
+	Bureaucrat(const Bureaucrat &bureaucrat);
 
-	BureauCrat &operator=(const BureauCrat &bureauCrat);
+	Bureaucrat &operator=(const Bureaucrat &bureaucrat);
 
-	virtual ~BureauCrat();
+	virtual ~Bureaucrat();
 
 	void incrementGrade();
 
 	void decrementGrade();
+
+	void signForm(Form &form);
 
 	class GradeTooHighException : public std::exception
 	{
@@ -37,15 +41,12 @@ public:
 		virtual const char *what() const throw();
 	};
 
-public:
-
 	const std::string &getName() const;
 
 	int getGrade() const;
 
-	friend std::ostream &operator<<(std::ostream &os, const BureauCrat &crat);
 };
 
-std::ostream &operator<<(std::ostream &os, const BureauCrat &crat);
+std::ostream &operator<<(std::ostream &os, const Bureaucrat &crat);
 
 #endif //MODULE_CPP_BUREAUCRAT_HPP

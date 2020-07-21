@@ -6,7 +6,9 @@
 #define MODULE_CPP_C_HPP
 
 
-class C
+#include "Base.hpp"
+
+class C : public Base
 {
 
 };
