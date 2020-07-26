@@ -80,13 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/louis/42/modules_cpp/cpp08/ex01/main.cpp">
+		<Unit filename="/Users/louis/42/modules_cpp/cpp01/ex05/Brain.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/Users/louis/42/modules_cpp/cpp08/ex01/span.cpp">
+		<Unit filename="/Users/louis/42/modules_cpp/cpp01/ex05/Brain.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/Users/louis/42/modules_cpp/cpp08/ex01/span.hpp">
+		<Unit filename="/Users/louis/42/modules_cpp/cpp01/ex05/Human.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/Users/louis/42/modules_cpp/cpp01/ex05/Human.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/Users/louis/42/modules_cpp/cpp01/ex05/main.cpp">
 			<Option target="module"/>
 		</Unit>
 		<Unit filename="/Users/louis/42/modules_cpp/CMakeLists.txt">

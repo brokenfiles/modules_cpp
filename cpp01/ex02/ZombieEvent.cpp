@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ZombieEvent.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/24 11:00:11 by louis             #+#    #+#             */
+/*   Updated: 2020/07/24 11:00:11 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ZombieEvent.hpp"
 
 Zombie *ZombieEvent::newZombie(std::string name)
 {
-	return (new Zombie(name, ZombieEvent::type));
+	return (new Zombie(name, this->type));
 }
 
 std::string ZombieEvent::randomName(size_t len)
@@ -23,7 +35,24 @@ Zombie *ZombieEvent::randomChump()
 	return (zombie);
 }
 
-void ZombieEvent::setZombieType(std::string type)
+void ZombieEvent::setZombieType(std::string new_type)
 {
-	ZombieEvent::type = type;
+	this->type = new_type;
+}
+
+ZombieEvent::ZombieEvent()
+{}
+
+ZombieEvent::~ZombieEvent()
+{}
+
+ZombieEvent::ZombieEvent(const ZombieEvent &other)
+{
+	*this = other;
+}
+
+ZombieEvent &ZombieEvent::operator=(const ZombieEvent &other)
+{
+	this->type = other.type;
+	return (*this);
 }

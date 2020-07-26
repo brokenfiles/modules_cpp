@@ -123,59 +123,86 @@ module/fast:
 	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/build
 .PHONY : module/fast
 
-cpp08/ex01/main.o: cpp08/ex01/main.cpp.o
+cpp01/ex05/Brain.o: cpp01/ex05/Brain.cpp.o
 
-.PHONY : cpp08/ex01/main.o
-
-# target to build an object file
-cpp08/ex01/main.cpp.o:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/main.cpp.o
-.PHONY : cpp08/ex01/main.cpp.o
-
-cpp08/ex01/main.i: cpp08/ex01/main.cpp.i
-
-.PHONY : cpp08/ex01/main.i
-
-# target to preprocess a source file
-cpp08/ex01/main.cpp.i:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/main.cpp.i
-.PHONY : cpp08/ex01/main.cpp.i
-
-cpp08/ex01/main.s: cpp08/ex01/main.cpp.s
-
-.PHONY : cpp08/ex01/main.s
-
-# target to generate assembly for a file
-cpp08/ex01/main.cpp.s:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/main.cpp.s
-.PHONY : cpp08/ex01/main.cpp.s
-
-cpp08/ex01/span.o: cpp08/ex01/span.cpp.o
-
-.PHONY : cpp08/ex01/span.o
+.PHONY : cpp01/ex05/Brain.o
 
 # target to build an object file
-cpp08/ex01/span.cpp.o:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/span.cpp.o
-.PHONY : cpp08/ex01/span.cpp.o
+cpp01/ex05/Brain.cpp.o:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Brain.cpp.o
+.PHONY : cpp01/ex05/Brain.cpp.o
 
-cpp08/ex01/span.i: cpp08/ex01/span.cpp.i
+cpp01/ex05/Brain.i: cpp01/ex05/Brain.cpp.i
 
-.PHONY : cpp08/ex01/span.i
+.PHONY : cpp01/ex05/Brain.i
 
 # target to preprocess a source file
-cpp08/ex01/span.cpp.i:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/span.cpp.i
-.PHONY : cpp08/ex01/span.cpp.i
+cpp01/ex05/Brain.cpp.i:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Brain.cpp.i
+.PHONY : cpp01/ex05/Brain.cpp.i
 
-cpp08/ex01/span.s: cpp08/ex01/span.cpp.s
+cpp01/ex05/Brain.s: cpp01/ex05/Brain.cpp.s
 
-.PHONY : cpp08/ex01/span.s
+.PHONY : cpp01/ex05/Brain.s
 
 # target to generate assembly for a file
-cpp08/ex01/span.cpp.s:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp08/ex01/span.cpp.s
-.PHONY : cpp08/ex01/span.cpp.s
+cpp01/ex05/Brain.cpp.s:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Brain.cpp.s
+.PHONY : cpp01/ex05/Brain.cpp.s
+
+cpp01/ex05/Human.o: cpp01/ex05/Human.cpp.o
+
+.PHONY : cpp01/ex05/Human.o
+
+# target to build an object file
+cpp01/ex05/Human.cpp.o:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Human.cpp.o
+.PHONY : cpp01/ex05/Human.cpp.o
+
+cpp01/ex05/Human.i: cpp01/ex05/Human.cpp.i
+
+.PHONY : cpp01/ex05/Human.i
+
+# target to preprocess a source file
+cpp01/ex05/Human.cpp.i:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Human.cpp.i
+.PHONY : cpp01/ex05/Human.cpp.i
+
+cpp01/ex05/Human.s: cpp01/ex05/Human.cpp.s
+
+.PHONY : cpp01/ex05/Human.s
+
+# target to generate assembly for a file
+cpp01/ex05/Human.cpp.s:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/Human.cpp.s
+.PHONY : cpp01/ex05/Human.cpp.s
+
+cpp01/ex05/main.o: cpp01/ex05/main.cpp.o
+
+.PHONY : cpp01/ex05/main.o
+
+# target to build an object file
+cpp01/ex05/main.cpp.o:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/main.cpp.o
+.PHONY : cpp01/ex05/main.cpp.o
+
+cpp01/ex05/main.i: cpp01/ex05/main.cpp.i
+
+.PHONY : cpp01/ex05/main.i
+
+# target to preprocess a source file
+cpp01/ex05/main.cpp.i:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/main.cpp.i
+.PHONY : cpp01/ex05/main.cpp.i
+
+cpp01/ex05/main.s: cpp01/ex05/main.cpp.s
+
+.PHONY : cpp01/ex05/main.s
+
+# target to generate assembly for a file
+cpp01/ex05/main.cpp.s:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/cpp01/ex05/main.cpp.s
+.PHONY : cpp01/ex05/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... module"
-	@echo "... cpp08/ex01/main.o"
-	@echo "... cpp08/ex01/main.i"
-	@echo "... cpp08/ex01/main.s"
-	@echo "... cpp08/ex01/span.o"
-	@echo "... cpp08/ex01/span.i"
-	@echo "... cpp08/ex01/span.s"
+	@echo "... cpp01/ex05/Brain.o"
+	@echo "... cpp01/ex05/Brain.i"
+	@echo "... cpp01/ex05/Brain.s"
+	@echo "... cpp01/ex05/Human.o"
+	@echo "... cpp01/ex05/Human.i"
+	@echo "... cpp01/ex05/Human.s"
+	@echo "... cpp01/ex05/main.o"
+	@echo "... cpp01/ex05/main.i"
+	@echo "... cpp01/ex05/main.s"
 .PHONY : help
 
 

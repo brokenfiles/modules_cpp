@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/24 11:00:34 by louis             #+#    #+#             */
+/*   Updated: 2020/07/24 11:00:34 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ZombieHorde.hpp"
 
 std::string ZombieHorde::randomName(size_t len)
@@ -34,4 +46,21 @@ ZombieHorde::~ZombieHorde()
 {
 	delete[] horde;
 	std::cout << "The horde has been eliminated." << std::endl;
+}
+
+ZombieHorde::ZombieHorde(const ZombieHorde &zombieHorde)
+{
+	(*this) = zombieHorde;
+}
+
+ZombieHorde &ZombieHorde::operator=(const ZombieHorde &zombieHorde)
+{
+	this->zombies_number = zombieHorde.zombies_number;
+	delete [] this->horde;
+	this->horde = new Zombie[zombieHorde.zombies_number];
+	for (size_t i = 0; i < zombieHorde.zombies_number; ++i)
+	{
+		this->horde[i] = zombieHorde.horde[i];
+	}
+	return (*this);
 }

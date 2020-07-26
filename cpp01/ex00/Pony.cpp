@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Pony.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/24 10:59:35 by louis             #+#    #+#             */
+/*   Updated: 2020/07/24 10:59:35 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Pony.hpp"
 
 Pony::Pony(std::string name, std::string color, float speed): name (name), color(color), speed(speed)
@@ -23,4 +35,17 @@ void Pony::eat(std::string food)
 void Pony::setSpeed(float newSpeed)
 {
 	Pony::speed = newSpeed;
+}
+
+Pony::Pony(const Pony &pony)
+{
+	*this = pony;
+}
+
+Pony &Pony::operator=(const Pony &pony)
+{
+	this->name = pony.name;
+	this->speed = pony.speed;
+	this->color = pony.color;
+	return (*this);
 }

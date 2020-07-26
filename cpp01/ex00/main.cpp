@@ -1,6 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/24 10:59:41 by louis             #+#    #+#             */
+/*   Updated: 2020/07/24 10:59:41 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Pony.hpp"
 
 void ponyOnTheStack()
+{
+	Pony pony("Garnier", "Brown", 4);
+
+	pony.eat("apple");
+	pony.run();
+	pony.eat("pineapple");
+	pony.setSpeed(3.4);
+	pony.run();
+}
+
+void ponyOnTheHeap()
 {
 	Pony *pony = new Pony("L'Oréal", "Black", 12);
 
@@ -11,17 +34,6 @@ void ponyOnTheStack()
 	pony->run();
 
 	delete pony;
-}
-
-void ponyOnTheHeap()
-{
-	Pony pony("Garnier", "Brown", 4);
-
-	pony.eat("apple");
-	pony.run();
-	pony.eat("pineapple");
-	pony.setSpeed(3.4);
-	pony.run();
 }
 
 int main(void)

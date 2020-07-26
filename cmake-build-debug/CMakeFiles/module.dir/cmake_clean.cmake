@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module.dir/cpp08/ex01/main.cpp.o"
-  "CMakeFiles/module.dir/cpp08/ex01/span.cpp.o"
+  "CMakeFiles/module.dir/cpp01/ex05/Brain.cpp.o"
+  "CMakeFiles/module.dir/cpp01/ex05/Human.cpp.o"
+  "CMakeFiles/module.dir/cpp01/ex05/main.cpp.o"
   "module"
   "module.pdb"
 )

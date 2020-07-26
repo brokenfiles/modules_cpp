@@ -5,8 +5,8 @@ project(module_cpp)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++98 -Wall -Wextra -Werror")
 
 file(GLOB module_cpp
-        "cpp08/ex01/*.hpp"
-        "cpp08/ex01/*.cpp"
+        "cpp01/ex05/*.hpp"
+        "cpp01/ex05/*.cpp"
         )
 
 add_executable(module ${module_cpp})
