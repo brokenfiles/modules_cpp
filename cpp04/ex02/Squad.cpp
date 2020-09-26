@@ -1,8 +1,16 @@
-//
-// Created by Louis Laurent on 26/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Squad.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 11:00:28 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 11:00:28 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <CoreFoundation/CoreFoundation.h>
+#include <cstdio>
 #include "Squad.hpp"
 
 Squad::Squad()
@@ -65,9 +73,9 @@ ISpaceMarine *Squad::getUnit(int i) const
 
 int Squad::push(ISpaceMarine *marine)
 {
-	ISpaceMarine **new_unit;
 	if (marine)
 	{
+		ISpaceMarine **new_unit;
 		for (int i = 0; i < getCount(); ++i)
 		{
 			if (getUnit(i) == marine)

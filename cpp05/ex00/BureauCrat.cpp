@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   BureauCrat.cpp                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 11:50:17 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 11:50:17 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "BureauCrat.hpp"
 
@@ -16,13 +24,11 @@ BureauCrat::BureauCrat(std::string name, int grade) : name(name), grade(grade)
 BureauCrat::BureauCrat(const BureauCrat &bureauCrat)
 {
 	this->grade = bureauCrat.grade;
-	this->name = bureauCrat.name;
 }
 
 BureauCrat &BureauCrat::operator=(const BureauCrat &bureauCrat)
 {
 	this->grade = bureauCrat.grade;
-	this->name = bureauCrat.name;
 	return (*this);
 }
 

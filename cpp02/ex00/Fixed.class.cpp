@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.class.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: llaurent <llaurent@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/27 17:16:49 by llaurent          #+#    #+#             */
+/*   Updated: 2020/07/27 17:16:49 by llaurent         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.class.hpp"
 
 Fixed::Fixed()
@@ -37,6 +49,4 @@ void Fixed::setRawBits(int const raw)
 	std::cout << "setRawBits member function called" << std::endl;
 	this->fixed_point = raw;
 }
-
-
 

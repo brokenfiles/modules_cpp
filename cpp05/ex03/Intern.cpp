@@ -1,15 +1,24 @@
-//
-// Created by Louis Laurent on 30/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Intern.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 12:25:41 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 12:25:41 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <iostream>
 #include "Intern.hpp"
 
-Form *Intern::makeForm(std::string name, const std::string & target)
+Form *Intern::makeForm(std::string name, const std::string &target)
 {
 	for (int i = 0; i < 3; ++i)
 	{
-		if (name == _names[i]) {
+		if (name == _names[i])
+		{
 			return _forms[i](target);
 		}
 	}
@@ -48,13 +57,13 @@ Intern::~Intern()
 
 Intern &Intern::operator=(const Intern &intern)
 {
-	(void)intern;
+	(void) intern;
 	return (*this);
 }
 
 Intern::Intern(const Intern &intern)
 {
-	(void)intern;
+	(void) intern;
 	init();
 }
 

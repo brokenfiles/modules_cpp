@@ -1,8 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   iter.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/15 09:46:22 by louis             #+#    #+#             */
+/*   Updated: 2020/08/15 09:46:22 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <iostream>
 
 template <typename T>
 void iter(T * array, int length, void (*f)(T)) {
+	if (array == NULL) {
+		return ;
+	}
 	for (int i = 0; i < length; ++i)
 	{
 		f(array[i]);
@@ -16,7 +30,7 @@ void print(T type) {
 
 template <typename T>
 void print_with_prefix(T type) {
-	std::cout << "Prfix : " << type << std::endl;
+	std::cout << "Prefix : " << type << std::endl;
 }
 
 int main(void) {

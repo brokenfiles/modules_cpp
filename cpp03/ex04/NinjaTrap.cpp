@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 23/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   NinjaTrap.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:49:44 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:49:44 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "NinjaTrap.hpp"
 #include "FragTrap.hpp"
@@ -43,4 +51,15 @@ void NinjaTrap::ninjaShoebox(NinjaTrap &clapTrap)
 	std::cout << this->name << " a envoyé une chaussure à " << clapTrap.getName() << std::endl;
 	clapTrap.takeDamage(30);
 	this->beRepaired(5);
+}
+
+NinjaTrap::NinjaTrap(const NinjaTrap &ninjaTrap)
+{
+	(*this) = ninjaTrap;
+}
+
+NinjaTrap &NinjaTrap::operator=(const NinjaTrap &ninjaTrap)
+{
+	ClapTrap::operator=(ninjaTrap);
+	return (*this);
 }

@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Victim.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:55:51 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:55:51 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_VICTIM_HPP
 #define MODULES_CPP_VICTIM_HPP
@@ -11,6 +19,7 @@ class Victim
 {
 private:
 	std::string name;
+
 public:
 	const std::string &getName() const;
 

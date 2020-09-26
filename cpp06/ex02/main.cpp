@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/14 11:54:16 by louis             #+#    #+#             */
+/*   Updated: 2020/08/14 11:54:16 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <iostream>
 #include "Base.hpp"
@@ -21,15 +32,15 @@ void identify_from_reference(Base & p) {
 	try {
 		A a = dynamic_cast<A &>(p);
 		std::cout << "Reference detector : Class A has been detected" << std::endl;
-	} catch (std::bad_cast &e) {}
+	} catch (std::exception &e) {} // badcast is better
 	try {
 		B b = dynamic_cast<B &>(p);
 		std::cout << "Reference detector : Class B has been detected" << std::endl;
-	} catch (std::bad_cast &e) {}
+	} catch (std::exception &e) {}
 	try {
 		C c = dynamic_cast<C &>(p);
 		std::cout << "Reference detector : Class C has been detected" << std::endl;
-	} catch (std::bad_cast &e) {}
+	} catch (std::exception &e) {}
 }
 
 

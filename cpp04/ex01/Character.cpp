@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Character.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:56:04 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:56:04 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Character.hpp"
 
@@ -17,6 +25,7 @@ Character::Character(const Character &character)
 
 Character &Character::operator=(const Character &character)
 {
+	(void)character;
 	return *this;
 }
 
@@ -25,9 +34,9 @@ const std::string &Character::getName() const
 	return name;
 }
 
-void Character::setName(const std::string &name)
+void Character::setName(const std::string &newName)
 {
-	Character::name = name;
+	this->name = newName;
 }
 
 int Character::getAp() const
@@ -35,9 +44,9 @@ int Character::getAp() const
 	return ap;
 }
 
-void Character::setAp(int ap)
+void Character::setAp(int newAp)
 {
-	Character::ap = ap;
+	this->ap = newAp;
 }
 
 AWeapon *Character::getWeapon() const
@@ -45,9 +54,9 @@ AWeapon *Character::getWeapon() const
 	return weapon;
 }
 
-void Character::setWeapon(AWeapon *weapon)
+void Character::setWeapon(AWeapon *newWeapon)
 {
-	Character::weapon = weapon;
+	Character::weapon = newWeapon;
 }
 
 void Character::recoverAP()
@@ -70,6 +79,10 @@ void Character::equip(AWeapon *aWeapon)
 
 void Character::attack(Enemy *enemy)
 {
+	if (! (*enemy).isAlive()) {
+		std::cout << "This enemy is already dead." << std::endl;
+		return ;
+	}
 	if (this->weapon != NULL)
 	{
 		const int apCost = weapon->getApcost();
@@ -81,10 +94,13 @@ void Character::attack(Enemy *enemy)
 		else
 		{
 			setAp(getAp() - apCost);
-			weapon->attack();
 			std::cout << "Character " << getName() << " attacks enemy " << enemy->getType() << " with weapon " << weapon->getName()
 					  << std::endl;
+			weapon->attack();
 			enemy->takeDamage(damages);
+			if (enemy->getHp() == 0) {
+				delete enemy;
+			}
 		}
 	}
 	else

@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 23/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   NinjaTrap.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:49:48 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:49:48 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_NINJATRAP_HPP
 #define MODULES_CPP_NINJATRAP_HPP
@@ -12,6 +20,12 @@
 class NinjaTrap : virtual public ClapTrap
 {
 public:
+	NinjaTrap(void);
+
+	NinjaTrap(const NinjaTrap &);
+
+	NinjaTrap &operator=(const NinjaTrap &);
+
 	~NinjaTrap();
 
 	NinjaTrap(const std::string &name);

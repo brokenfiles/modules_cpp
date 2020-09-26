@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.class.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: llaurent <llaurent@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/27 17:17:06 by llaurent          #+#    #+#             */
+/*   Updated: 2020/07/27 17:17:06 by llaurent         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.class.hpp"
 
 Fixed::Fixed()
@@ -13,6 +25,7 @@ Fixed::~Fixed()
 
 Fixed::Fixed(const int i)
 {
+//	this->fixed_point = i << this->bits;
 	this->fixed_point = i << this->bits;
 }
 

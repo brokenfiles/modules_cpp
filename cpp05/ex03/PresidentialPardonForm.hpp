@@ -1,10 +1,17 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 12:25:54 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 12:25:54 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULE_CPP_PRESIDENTIALPARDONFORM_HPP
 #define MODULE_CPP_PRESIDENTIALPARDONFORM_HPP
-
 
 #include "Form.hpp"
 
@@ -15,8 +22,7 @@ public:
 	PresidentialPardonForm(const PresidentialPardonForm &presidentialPardonForm);
 	PresidentialPardonForm &operator=(const PresidentialPardonForm &presidentialPardonForm);
 	virtual ~PresidentialPardonForm();
-	void execute(const Bureaucrat & executor);
+	void execute(const Bureaucrat &executor);
 };
-
 
 #endif //MODULE_CPP_PRESIDENTIALPARDONFORM_HPP

@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PlasmaRifle.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:56:26 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:56:26 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_PLASMARIFLE_HPP
 #define MODULES_CPP_PLASMARIFLE_HPP
@@ -16,6 +24,10 @@ public:
 	virtual ~PlasmaRifle();
 
 	PlasmaRifle();
+
+	PlasmaRifle &operator=(const PlasmaRifle &);
+
+	PlasmaRifle(const PlasmaRifle &);
 };
 
 

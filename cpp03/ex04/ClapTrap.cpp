@@ -1,10 +1,24 @@
-//
-// Created by Louis Laurent on 22/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:49:22 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:49:22 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(const std::string &name) : name(name)
+{
+	srand(time(NULL));
+	std::cout << "Constructor of ClapTrap" << std::endl;
+}
+
+ClapTrap::ClapTrap(void) : name("Clap-Trap")
 {
 	srand(time(NULL));
 	std::cout << "Constructor of ClapTrap" << std::endl;
@@ -17,6 +31,7 @@ ClapTrap::~ClapTrap()
 
 ClapTrap::ClapTrap(const ClapTrap &clapTrap)
 {
+	srand(time(NULL));
 	*this = clapTrap;
 }
 
@@ -93,9 +108,9 @@ const std::string &ClapTrap::getName() const
 	return name;
 }
 
-void ClapTrap::setName(const std::string &name)
+void ClapTrap::setName(const std::string &newName)
 {
-	ClapTrap::name = name;
+	ClapTrap::name = newName;
 }
 
 int ClapTrap::getHitPoints() const
@@ -143,9 +158,9 @@ int ClapTrap::getLevel() const
 	return level;
 }
 
-void ClapTrap::setLevel(int level)
+void ClapTrap::setLevel(int newLevel)
 {
-	ClapTrap::level = level;
+	ClapTrap::level = newLevel;
 }
 
 int ClapTrap::getMeleeAttackDamage() const

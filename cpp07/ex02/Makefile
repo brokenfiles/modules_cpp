@@ -4,8 +4,7 @@ RM			= rm -f
 OBJS_DIR	= ./objects
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
-SRCSCPP		=	Array.cpp \
-				main.cpp
+SRCSCPP		=	main.cpp
 
 OBJS		= ${SRCSCPP:%.cpp=${OBJS_DIR}/%.o}
 

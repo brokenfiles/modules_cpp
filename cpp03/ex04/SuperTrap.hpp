@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 23/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   SuperTrap.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:50:07 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:50:07 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_SUPERTRAP_HPP
 #define MODULES_CPP_SUPERTRAP_HPP
@@ -11,6 +19,10 @@
 class SuperTrap : public FragTrap, public NinjaTrap
 {
 public:
+	SuperTrap(const SuperTrap &);
+
+	SuperTrap &operator=(const SuperTrap &);
+
 	SuperTrap(const std::string &name);
 
 	~SuperTrap();

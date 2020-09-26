@@ -1,8 +1,15 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   TacticalMarine.cpp                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 11:00:35 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 11:00:35 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <CoreFoundation/CoreFoundation.h>
 #include <iostream>
 #include "TacticalMarine.hpp"
 

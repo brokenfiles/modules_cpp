@@ -1,8 +1,15 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   AssaultTerminator.cpp                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:56:54 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:56:54 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <CoreFoundation/CoreFoundation.h>
 #include <iostream>
 #include "AssaultTerminator.hpp"
 

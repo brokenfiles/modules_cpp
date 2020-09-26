@@ -1,11 +1,20 @@
-//
-// Created by Louis Laurent on 23/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:48:32 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:48:32 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
+	srand(time(NULL));
 	std::cout << "Constructor of ScavTrap" << std::endl;
 	hit_points = 100;
 	max_hit_points = 100;
@@ -29,4 +38,16 @@ void ScavTrap::challengeNewcomer(const std::string &target)
 
 	std::cout << TITLE << "(scavtrap) " << this->name << " met au défi " << target << " de "
 			  << challenges[random_number] << std::endl;
+}
+
+ScavTrap &ScavTrap::operator=(const ScavTrap &scavTrap)
+{
+	ClapTrap::operator=(scavTrap);
+	return (*this);
+}
+
+ScavTrap::ScavTrap(const ScavTrap &scavTrap)
+{
+	srand(time(NULL));
+	(*this) = scavTrap;
 }

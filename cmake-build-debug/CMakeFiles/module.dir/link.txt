@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++98 -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/module.dir/cpp01/ex05/Brain.cpp.o CMakeFiles/module.dir/cpp01/ex05/Human.cpp.o CMakeFiles/module.dir/cpp01/ex05/main.cpp.o  -o module 

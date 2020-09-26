@@ -1,17 +1,23 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Form.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 12:26:46 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 12:26:46 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form(const std::string &name, const int requiredToSign, const int requiredToExecute, const std::string &target) : _name(
-		name),
-																												  _signed(false),
-																												  _requiredToSign(
-																														  requiredToSign),
-																												  _requiredToExecute(
-																														  requiredToExecute),
-																												  _target(target)
+Form::Form(const std::string &name, const int requiredToSign, const int requiredToExecute, const std::string &target)
+		: _name(name),
+		  _signed(false),
+		  _requiredToSign(requiredToSign),
+		  _requiredToExecute(requiredToExecute),
+		  _target(target)
 {
 	if (requiredToSign < 1 || requiredToExecute < 1)
 	{
@@ -95,7 +101,6 @@ void Form::setTarget(const std::string &target)
 {
 	_target = target;
 }
-
 
 const char *Form::GradeTooHighException::what() const throw()
 {

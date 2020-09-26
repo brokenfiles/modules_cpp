@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 22/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:48:15 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:48:15 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_CLAPTRAP_HPP
 #define MODULES_CPP_CLAPTRAP_HPP
@@ -12,6 +20,8 @@
 class ClapTrap
 {
 public:
+	ClapTrap(void);
+
 	ClapTrap(const std::string &name);
 
 	~ClapTrap();

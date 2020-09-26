@@ -1,7 +1,16 @@
-#include "FragTrap.hpp"
-#include "../ex02/ClapTrap.hpp"
-#include "../ex02/FragTrap.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:47:49 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:47:49 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "FragTrap.hpp"
 
 FragTrap::FragTrap(std::string name) : name(name), hit_points(100), max_hit_points(100), energy_points(100),
 									   max_energy_points(100),
@@ -14,6 +23,7 @@ FragTrap::FragTrap(std::string name) : name(name), hit_points(100), max_hit_poin
 
 FragTrap::FragTrap(const FragTrap &fragTrap)
 {
+	srand(time(NULL));
 	*this = fragTrap;
 }
 

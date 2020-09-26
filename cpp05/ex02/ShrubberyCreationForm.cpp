@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 12:05:44 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 12:05:44 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
@@ -25,9 +33,9 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 void ShrubberyCreationForm::execute(Bureaucrat const &executor)
 {
 	Form::execute(executor);
-	std::string filename = executor.getName() + "_shrubbery";
+	std::string filename = getTarget() + "_shrubbery";
 	std::ofstream shrubbery;
-	shrubbery.open(filename, std::ofstream::out | std::ofstream::trunc);
+	shrubbery.open(filename.c_str(), std::ofstream::out | std::ofstream::trunc);
 	if (shrubbery.fail()) {
 		std::cout << "Can't create file (probably permission problem)" << std::endl;
 		return ;

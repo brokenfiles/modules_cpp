@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Character.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 11:00:49 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 11:00:49 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Character.hpp"
 
@@ -80,7 +88,8 @@ void Character::use(int idx, ICharacter &target)
 {
 	if (idx >= 0 && (unsigned int) idx < this->_count)
 	{
-		if (this->_inventory[idx] != NULL) {
+		if (this->_inventory[idx] != NULL)
+		{
 			this->_inventory[idx]->use(target);
 		}
 	}

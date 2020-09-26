@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 22/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:49:35 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:49:35 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_FRAGTRAP_HPP
 #define MODULES_CPP_FRAGTRAP_HPP
@@ -10,6 +18,12 @@
 class FragTrap : virtual public ClapTrap
 {
 public:
+
+	FragTrap(void);
+
+	FragTrap(const FragTrap &);
+
+	FragTrap &operator=(const FragTrap &);
 
 	FragTrap(const std::string &name);
 

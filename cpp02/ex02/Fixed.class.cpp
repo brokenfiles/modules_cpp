@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.class.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: llaurent <llaurent@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/27 17:17:20 by llaurent          #+#    #+#             */
+/*   Updated: 2020/07/27 17:17:20 by llaurent         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.class.hpp"
 
 Fixed::Fixed()
@@ -109,30 +121,32 @@ Fixed Fixed::operator*(const Fixed &fixed) const
 	return (Fixed(toFloat() * fixed.toFloat()));
 }
 
-Fixed &Fixed::operator++()
+Fixed Fixed::operator++()
 {
-	this->fixed_point += (1 << this->bits);
-	return (*this);
+	Fixed temp;
+	temp.fixed_point = ++fixed_point;
+	return (temp);
 }
 
-Fixed Fixed::operator++(int i)
+Fixed Fixed::operator++(int)
 {
-	this->fixed_point += i;
-	return (*this);
+	Fixed temp;
+	temp.fixed_point = fixed_point++;
+	return (temp);
 }
 
-Fixed &Fixed::operator--()
+Fixed Fixed::operator--()
 {
-	this->fixed_point -= (1 << this->bits);
-	return (*this);
+	Fixed temp;
+	temp.fixed_point = --fixed_point;
+	return (temp);
 }
 
-Fixed Fixed::operator--(int i)
+Fixed Fixed::operator--(int)
 {
-	(void) i;
-	Fixed fixed = (*this);
-	fixed_point -= (1 << this->bits);
-	return (fixed);
+	Fixed temp;
+	temp.fixed_point = fixed_point++;
+	return (temp);
 }
 
 Fixed &Fixed::min(Fixed &fixed1, Fixed &fixed2)

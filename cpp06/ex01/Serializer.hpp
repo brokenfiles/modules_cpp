@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 20/07/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Serializer.hpp                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/07 13:30:03 by louis             #+#    #+#             */
+/*   Updated: 2020/08/07 13:30:03 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULE_CPP_SERIALIZER_HPP
 #define MODULE_CPP_SERIALIZER_HPP
@@ -17,6 +25,8 @@ class Serializer
 {
 private:
 	Data *data;
+
+	size_t random_number(size_t min, size_t max);
 
 	std::string randomString(size_t len);
 

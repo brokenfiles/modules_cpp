@@ -72,5 +72,5 @@ int		FileHandler::write_new_file(std::string to_find, std::string to_replace)
 
 void	FileHandler::setContent(std::string content)
 {
-	FileHandler::content = content;
+	this->content = content;
 }

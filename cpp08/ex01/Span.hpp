@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 21/07/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Span.hpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/17 12:39:28 by louis             #+#    #+#             */
+/*   Updated: 2020/08/17 12:39:28 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULE_CPP_SPAN_HPP
 #define MODULE_CPP_SPAN_HPP
@@ -19,9 +27,18 @@ public:
 	Span &operator=(const Span &);
 	~Span();
 	void addNumber(int n);
-	int shortestSpan();
-	int longestSpan();
+	size_t shortestSpan() const;
+	size_t longestSpan() const;
+	const std::vector<int> &getStorage() const;
+	unsigned int getSize() const;
+	class NotEnoughNumbersException : public std::exception
+	{
+		const char *what() const throw();
+	};
+	class OutOfBoundsException : public std::exception
+	{
+		const char *what() const throw();
+	};
 };
-
 
 #endif //MODULE_CPP_SPAN_HPP

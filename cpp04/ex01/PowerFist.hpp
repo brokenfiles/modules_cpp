@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PowerFist.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:56:33 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:56:33 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_POWERFIST_HPP
 #define MODULES_CPP_POWERFIST_HPP
@@ -16,6 +24,10 @@ public:
 	virtual ~PowerFist();
 
 	virtual void attack() const;
+
+	PowerFist &operator=(const PowerFist &);
+
+	PowerFist(const PowerFist &);
 };
 
 

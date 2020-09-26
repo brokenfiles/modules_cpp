@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Peon.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:55:30 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:55:30 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Peon.hpp"
 
@@ -17,4 +25,15 @@ Peon::~Peon()
 void Peon::getPolymorphed() const
 {
 	std::cout << getName() << " has been turned into a pink pony!" << std::endl;
+}
+
+Peon &Peon::operator=(const Peon &peon)
+{
+	Victim::operator=(peon);
+	return (*this);
+}
+
+Peon::Peon(const Peon &peon) : Victim(peon.getName())
+{
+	*this = peon;
 }

@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Peon.hpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:55:36 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:55:36 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULES_CPP_PEON_HPP
 #define MODULES_CPP_PEON_HPP
@@ -11,9 +19,13 @@
 class Peon : public Victim
 {
 public:
+	Peon(const std::string &name);
+
 	virtual ~Peon();
 
-	Peon(const std::string &name);
+	Peon &operator=(const Peon &);
+
+	Peon(const Peon &);
 
 	void getPolymorphed() const;
 };

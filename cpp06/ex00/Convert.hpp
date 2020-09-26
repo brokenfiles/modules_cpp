@@ -1,10 +1,19 @@
-//
-// Created by Louis Laurent on 01/07/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Convert.hpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/07 13:24:25 by louis             #+#    #+#             */
+/*   Updated: 2020/08/07 13:24:25 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef MODULE_CPP_CONVERT_HPP
 #define MODULE_CPP_CONVERT_HPP
 
+#include <limits.h>
 #include <iostream>
 
 class Convert

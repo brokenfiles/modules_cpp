@@ -1,11 +1,20 @@
-//
-// Created by Louis Laurent on 22/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:48:20 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:48:20 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
 {
+	srand(time(NULL));
 	std::cout << "Constructor of FragTrap" << std::endl;
 	hit_points = 100;
 	max_hit_points = 100;
@@ -39,4 +48,16 @@ void FragTrap::vaulthunter_dot_exe(const std::string &target)
 FragTrap::~FragTrap()
 {
 	std::cout << "Destructor of FragTrap" << std::endl;
+}
+
+FragTrap::FragTrap(const FragTrap &fragTrap)
+{
+	srand(time(NULL));
+	*this = fragTrap;
+}
+
+FragTrap &FragTrap::operator=(const FragTrap &fragTrap)
+{
+	ClapTrap::operator=(fragTrap);
+	return *this;
 }

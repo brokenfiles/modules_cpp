@@ -24,7 +24,7 @@ Human::~Human()
 
 std::string Human::identify(void)
 {
-	return (brain->identify());
+	return (this->brain->identify());
 }
 
 Brain &Human::getBrain()

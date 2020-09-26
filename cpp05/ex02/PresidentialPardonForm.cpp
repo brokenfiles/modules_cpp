@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PresidentialPardonForm.cpp                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/05 12:05:30 by louis             #+#    #+#             */
+/*   Updated: 2020/08/05 12:05:30 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <iostream>
 #include "PresidentialPardonForm.hpp"
@@ -24,7 +32,7 @@ PresidentialPardonForm::~PresidentialPardonForm()
 void PresidentialPardonForm::execute(const Bureaucrat &executor)
 {
 	Form::execute(executor);
-	std::cout << executor.getName() << " has been forgiven by Zaphod Beeblebrox" << std::endl;
+	std::cout << getTarget() << " has been forgiven by Zaphod Beeblebrox" << std::endl;
 }
 
 

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:56:17 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:56:17 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include "SuperMutant.hpp"
 #include "Character.hpp"
@@ -23,5 +35,8 @@ int main(void)
 	std::cout << *moi << std::endl;
 	moi->attack(b);
 	std::cout << *moi << std::endl;
+	delete moi;
+	delete pr;
+	delete pf;
 	return 0;
 }

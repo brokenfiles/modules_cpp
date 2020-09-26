@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:47:59 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:47:59 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(std::string name) : name(name), hit_points(100), max_hit_points(100), energy_points(50),
@@ -11,6 +23,7 @@ ScavTrap::ScavTrap(std::string name) : name(name), hit_points(100), max_hit_poin
 
 ScavTrap::ScavTrap(const ScavTrap &scavTrap)
 {
+	srand(time(NULL));
 	*this = scavTrap;
 }
 

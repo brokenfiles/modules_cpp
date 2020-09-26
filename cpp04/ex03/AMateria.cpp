@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 28/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   AMateria.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 11:00:42 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 11:00:42 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "AMateria.hpp"
 
@@ -37,7 +45,7 @@ unsigned int AMateria::getXP() const
 void AMateria::use(ICharacter &target)
 {
 	this->_xp += 10;
-	(void)target;
+	(void) target;
 }
 
 

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/01 14:47:37 by louis             #+#    #+#             */
+/*   Updated: 2020/08/01 14:47:37 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap(std::string name) : name(name), hit_points(100), max_hit_points(100), energy_points(100),
@@ -6,11 +18,12 @@ FragTrap::FragTrap(std::string name) : name(name), hit_points(100), max_hit_poin
 									   armor_damage_reduction(5)
 {
 	srand(time(NULL));
-	std::cout << "Euh Jack ? - Oui ? - Le constructeur a été appelé" << std::endl;
+	std::cout << "Le constructeur a été appelé" << std::endl;
 }
 
 FragTrap::FragTrap(const FragTrap &fragTrap)
 {
+	srand(time(NULL));
 	*this = fragTrap;
 }
 

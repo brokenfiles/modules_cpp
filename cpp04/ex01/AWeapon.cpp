@@ -1,6 +1,14 @@
-//
-// Created by Louis Laurent on 25/06/2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   AWeapon.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/08/03 10:55:54 by louis             #+#    #+#             */
+/*   Updated: 2020/08/03 10:55:54 by louis            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "AWeapon.hpp"
 
@@ -32,9 +40,9 @@ const std::string &AWeapon::getName() const
 	return name;
 }
 
-void AWeapon::setName(const std::string &name)
+void AWeapon::setName(const std::string &newName)
 {
-	AWeapon::name = name;
+	this->name = newName;
 }
 
 int AWeapon::getApcost() const
@@ -42,9 +50,9 @@ int AWeapon::getApcost() const
 	return apcost;
 }
 
-void AWeapon::setApcost(int apcost)
+void AWeapon::setApcost(int newApcost)
 {
-	AWeapon::apcost = apcost;
+	this->apcost = newApcost;
 }
 
 int AWeapon::getDamage() const
@@ -52,7 +60,7 @@ int AWeapon::getDamage() const
 	return damage;
 }
 
-void AWeapon::setDamage(int damage)
+void AWeapon::setDamage(int newDamage)
 {
-	AWeapon::damage = damage;
+	this->damage = newDamage;
 }
